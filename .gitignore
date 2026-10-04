@@ -1,0 +1,44 @@
+# ========================================================
+# RideLink .gitignore
+# ========================================================
+
+# Maven build outputs
+**/target/
+**/*.jar
+**/*.war
+**/*.ear
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE & Editor files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.eclipse/
+*.project
+*.classpath
+*.settings/
+
+# H2 and local databases
+**/data/
+**/*.mv.db
+**/*.trace.db
+**/*.db
+
+# Logs
+**/*.log
+**/logs/
+
+# Operating system files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Excluded services (as requested: account-service, driver-vehicle-service, ride-service only)
+fare-payment-service/
